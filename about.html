@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="Explore Kant's deontological ethics — the philosophy of duty and moral obligation."
+    />
+    <meta name="author" content="Shasli Bansi" />
+    <title>Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo-container">
+        <img src="kali/png/kalilinux.png" alt="Kali Linux Logo" />
+        <h1>Deon Kan</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="1introduction.html">Introduction</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i class="fa-solid fa-arrow-left" id="prevHeader"></i>
+        <i class="fa-solid fa-arrow-right" id="nextHeader"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-note-sticky"></i>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="home" class="page active"></section>
+      <div class="content-box">
+        <div class="topics-list">
+          <h2>Kant’s Moral Philosophy</h2>
+          <h4>
+            First published Mon Feb 23, 2004; substantive revision Thu Oct 2,
+            2025
+          </h4>
+          <br />
+          <p>
+            <b>Immanuel Kant (1724–1804) </b><br />argued that the supreme
+            principle of morality is a principle of rationality that he dubbed
+            the “Categorical Imperative” (CI). In Kant’s view, the CI is an
+            objective, rationally necessary and unconditional principle that all
+            rational agents must follow despite any desires they may have to the
+            contrary. He of course thought that we, though imperfect, are all
+            rational agents. So he argued that all of our own specific moral
+            requirements are justified by this principle. If he is right, that
+            means that all immoral actions are irrational because they violate
+            the CI. Other philosophers, such as Hobbes, Locke and Aquinas, also
+            argued that moral requirements are requirements of rationality.
+            However, these standards were either instrumental principles of
+            rationality for satisfying one’s desires, as in Hobbes, or external
+            rational principles that are discoverable by reason, as in Locke and
+            Aquinas. Kant agreed with many of his predecessors that an analysis
+            of practical reason reveals the requirement that rational agents
+            must conform to instrumental principles. Yet he also argued that
+            conformity to the CI (a non-instrumental principle of rationality),
+            and so to moral requirements themselves, can nevertheless be shown
+            to be essential to rational agency. This argument was based on his
+            striking doctrine that a rational will must be regarded as
+            autonomous, or free in the sense of being the author of the law that
+            binds it. The fundamental principle of morality — the CI — is none
+            other than the law of an autonomous will. Thus, at the heart of
+            Kant’s moral philosophy is a conception of reason whose reach in
+            practical affairs goes well beyond that of a Humean ‘slave’ to the
+            passions. Moreover, it is the presence of this self-governing reason
+            in each person that Kant thought offered decisive grounds for
+            viewing each as possessed of equal worth and deserving of equal
+            respect.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- === Vertical Scrollable Pagination Sidebar === -->
+    <aside class="pagination-sidebar">
+      <button class="scroll-btn prev" id="prevBtn">▲</button>
+
+      <div class="scroll-wrapper-vertical">
+        <ul class="pagination-vertical" id="pagination"></ul>
+      </div>
+
+      <button class="scroll-btn next" id="nextBtn">▼</button>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Deon Kan Philosophy — Historical Ethics in a Modern World</p>
+    </footer>
+
+    <!-- SLIDING PANEL -->
+    <aside id="groupPanel">
+      <div class="panel-content">
+        <h2>Group Members</h2>
+        <ul>
+          <li>Shasli Bansi-TeamLeader</li>
+          <li>Anna Lou Pasquin</li>
+          <li>Gerald Villarias</li>
+          <li>Herald Gedan Garino</li>
+          <li>Jireh Jade Paborada</li>
+          <li>Lemuel John Panaligan</li>
+          <li>Mary Therese Pinggol</li>
+          <li>Mat Hias</li>
+          <li>Merille Londres</li>
+          <li>Princes Santiago</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Notes Popup -->
+    <div id="notesPopup" class="notes-popup hidden">
+      <div class="notes-box">
+        <h2>My Notes</h2>
+        <textarea
+          id="notesText"
+          placeholder="Write your notes here..."
+        ></textarea>
+        <button id="notesDone">Done</button>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div id="searchContainer" class="search-box">
+      <h3>Find a Word</h3>
+      <input type="text" id="searchInput" placeholder="Type to search..." />
+      <button id="doneBtn">Done</button>
+    </div>
+
+    <!-- Display Word on Top -->
+    <div id="foundWordDisplay"></div>
+  </body>
+</html>

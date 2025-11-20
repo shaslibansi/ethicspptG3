@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="Explore Kant's deontological ethics — the philosophy of duty and moral obligation."
+    />
+    <meta name="author" content="Shasli Bansi" />
+    <title>Immanuel Kant's Deontological Ethics</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo-container">
+        <img src="kali/png/kalilinux.png" alt="Kali Linux Logo" />
+        <h1>Deon Kan</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="1introduction.html">Introduction</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i class="fa-solid fa-arrow-left" id="prevHeader"></i>
+        <i class="fa-solid fa-arrow-right" id="nextHeader"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-note-sticky"></i>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="home" class="page active"></section>
+      <div class="content-box">
+        <div class="topics-list">
+          <h2><b>Immanuel Kant's Deontological Ethics </b></h2>
+          <p>
+            <b
+              >-The concept of the "categorical imperative": Act only according
+              to maxims that can be universalized.</b
+            >
+          </p>
+          <br />
+          <b>The Categorical Imperative</b>
+          <p>
+            Kant’s key principle:<br />
+            <br />“Act only according to that maxim through which you can at the
+            same time will that it should become a universal law.”
+            <br />
+            <br />
+            <lu>
+              <li>
+                Maxim: A personal rule of action (e.g., “I will lie to gain
+                money”).
+              </li>
+              <li>
+                Universalization Test: Ask if everyone could act on the same
+                rule without contradiction.
+              </li>
+              <li>
+                If everyone lied, promises would lose meaning—therefore lying is
+                immoral.
+              </li>
+              <li>
+                Moral Law: Only actions that could logically and consistently be
+                universalized are morally right.
+              </li>
+            </lu>
+          </p>
+        </div>
+      </div>
+    </main>
+
+     <!-- === Vertical Scrollable Pagination Sidebar === -->
+    <aside class="pagination-sidebar">
+      <button class="scroll-btn prev" id="prevBtn">▲</button>
+
+      <div class="scroll-wrapper-vertical">
+        <ul class="pagination-vertical" id="pagination"></ul>
+      </div>
+
+      <button class="scroll-btn next" id="nextBtn">▼</button>
+    </aside>
+
+
+    <div class="galleryexample">
+      <img src="kali/Immanuel Kant's/ex2.jpg" alt="Nurse" />
+      <img src="kali/Immanuel Kant's/ex1.jpg" alt="Teacher" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Deon Kan Philosophy — Historical Ethics in a Modern World</p>
+    </footer>
+
+    <!-- SLIDING PANEL -->
+    <aside id="groupPanel">
+      <div class="panel-content">
+        <h2>Group Members</h2>
+        <ul>
+          <li>Shasli Bansi</li>
+          <li>Anna Lou Pasquin</li>
+          <li>Gerald Villarias</li>
+          <li>Herald Gedan Garino</li>
+          <li>Jireh Jade Paborada</li>
+          <li>Lemuel John Panaligan</li>
+          <li>Mary Therese Pinggol</li>
+          <li>Mat Hias</li>
+          <li>Merille Londres</li>
+          <li>Princes Santiago</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Notes Popup -->
+    <div id="notesPopup" class="notes-popup hidden">
+      <div class="notes-box">
+        <h2>My Notes</h2>
+        <textarea
+          id="notesText"
+          placeholder="Write your notes here..."
+        ></textarea>
+        <button id="notesDone">Done</button>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div id="searchContainer" class="search-box">
+      <h3>Find a Word</h3>
+      <input type="text" id="searchInput" placeholder="Type to search..." />
+      <button id="doneBtn">Done</button>
+    </div>
+
+    <!-- Display Word on Top -->
+    <div id="foundWordDisplay"></div>
+  </body>
+</html>
